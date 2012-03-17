@@ -12,7 +12,7 @@ var passport = require('passport')
 passport.use(new FacebookStrategy({
     //https://developers.facebook.com/apps/203298939775074/summary?web_hosting=0
     clientID: 203298939775074,//FACEBOOK_APP_ID,
-    clientSecret: b9a7bb0b88d306032a71d019a14139c0,//FACEBOOK_APP_SECRET,
+    clientSecret: "b9a7bb0b88d306032a71d019a14139c0",//FACEBOOK_APP_SECRET,
     callbackURL: "http://node.raminv80.c9.io/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
