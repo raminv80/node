@@ -4,9 +4,13 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' })
+  res.render('index', { title: 'Express', user: req.user })
 };
 
-exports.user = function(req, res){
-  res.render('user', { title: 'Express' })
+exports.account = function(req, res){
+  res.render('account', { title: 'Account', user: req.user })
+};
+
+exports.login = function(req, res){
+  res.render('login', { title: 'Login', user: req.user });
 };
